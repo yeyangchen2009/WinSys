@@ -1,0 +1,169 @@
+Windows Registry Editor Version 5.00
+
+; ==============================================
+; 脚本用途：批量配置各类代码/配置/脚本文件为文本类型，开启资源管理器预览窗格直接预览内容
+; 保存为 .reg 文件，双击执行导入注册表
+; 导入规则：仅新增/更新本文件列出后缀的两项配置，不会删除系统原有文件关联，无清除逻辑
+; 注释说明：REG仅支持 ; 作为注释，# 会引发导入语法错误
+; ==============================================
+
+; Markdown文档
+[HKEY_CLASSES_ROOT\.md]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.md\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; 日志输出文件
+[HKEY_CLASSES_ROOT\.output]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.output\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; 字幕文件
+[HKEY_CLASSES_ROOT\.ass]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.ass\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.srt]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.srt\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; JavaScript / TypeScript
+[HKEY_CLASSES_ROOT\.js]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.js\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.ts]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.ts\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.tsx]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.tsx\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.jsx]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.jsx\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; JSON / JSONC配置
+[HKEY_CLASSES_ROOT\.json]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.json\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.jsonc]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.jsonc\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; Python
+[HKEY_CLASSES_ROOT\.py]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.py\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; Java
+[HKEY_CLASSES_ROOT\.java]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.java\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; SQL 脚本
+[HKEY_CLASSES_ROOT\.sql]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.sql\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; Shell / PowerShell
+[HKEY_CLASSES_ROOT\.sh]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.sh\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.ps1]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.ps1\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; 脚本批处理
+[HKEY_CLASSES_ROOT\.bat]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.bat\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.cmd]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.cmd\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; YAML / TOML 配置
+[HKEY_CLASSES_ROOT\.yml]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.yml\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.yaml]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.yaml\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.toml]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.toml\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; HTML / CSS
+[HKEY_CLASSES_ROOT\.html]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.html\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.css]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.css\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; Git 相关
+[HKEY_CLASSES_ROOT\.gitignore]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.gitignore\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.env]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.env\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; C / C++
+[HKEY_CLASSES_ROOT\.c]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.c\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.cpp]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.cpp\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+; Markup / 文档配置
+[HKEY_CLASSES_ROOT\.xml]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.xml\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.ini]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.ini\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
+[HKEY_CLASSES_ROOT\.log]
+"PerceivedType"="text"
+[HKEY_CLASSES_ROOT\.log\shellex\{8895b1c6-b41f-4c1c-a562-0d564250836f}]
+@="{1531d583-8375-4d3f-b5fb-d23bbd169f22}"
+
