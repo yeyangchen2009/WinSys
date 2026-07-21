@@ -1,6 +1,6 @@
 # 开启 Windows 资源管理器预览窗格对代码文件的文本预览支持
-# 用法: irm <url> | iex
-# 或保存为 .ps1 文件后执行
+# 用法:打开powershell，输入下面命令行，回车。
+# ` irm https://raw.githubusercontent.com/yeyangchen2009/WinSys/refs/heads/main/install-code-preview.ps1 | iex `
 
 $ErrorActionPreference = "Stop"
 
