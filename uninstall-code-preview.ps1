@@ -5,7 +5,7 @@
 $ErrorActionPreference = "Stop"
 
 $extensions = @(
-    ".md", ".output", ".ass", ".srt",
+    ".md", ".output", ".ass", ".srt", ".ef2",
     ".js", ".ts", ".tsx", ".jsx",
     ".json", ".jsonc",
     ".py", ".java", ".sql",
