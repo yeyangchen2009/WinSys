@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 
 # 定义需要配置的文件扩展名
 $extensions = @(
-    ".md", ".output", ".ass", ".srt",
+    ".md", ".output", ".ass", ".srt", ".ef2",
     ".js", ".ts", ".tsx", ".jsx",
     ".json", ".jsonc",
     ".py", ".java", ".sql",
